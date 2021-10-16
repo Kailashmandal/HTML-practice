@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and More</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+       .container{
+           font-family: Public Sans;
+           border-color: rgb(4, 66, 66);
+           border-width: 2px;
+           border-style:solid ;
+           background-color: mediumaquamarine;
+           padding: 20px;
+           margin: 50px auto;
+           width: 600px;
+
+       }
+       a{
+           text-decoration: none;
+           
+       }
+       a:hover{
+           color: black;
+           background-color: yellowgreen;
+       }
+       a:visited{
+          background-color:  green;
+       }
+       a:active{
+           background-color: salmon;
+       }
+       .btn{
+           color: aliceblue;
+           font-family: Public Sans;
+           background-color: rgb(21, 150, 155);
+           padding: 3px;
+           border: 1px solid black;
+
+           /* cursor property is used to create hand pointer*/
+           cursor: pointer;
+
+       }
+       /* now <a> will follow this css*/
+       .btn:hover{
+           color:black ;
+           background-color:darkgoldenrod ;
+       }
+      
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+    <h3>This is Paragraph.</h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus pariatur, praesentium sunt iusto molestiae qui! Quas aut saepe voluptate rem! Ut eaque autem officia. Consequatur quia totam accusantium animi aspernatur!
+    </p>
+    <a href="https://github.com/Kailashmandal/Corejava_with_kailash.git" target="_block" class="btn">Read More</a>
+
+    <!-- button is element use to creates buttons -->
+    <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>
