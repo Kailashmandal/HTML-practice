@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        
+         /* Universal selector in css set everything for every elements.*/
+        *{
+            /*setting box size for every element*/
+         box-sizing: border-box; 
+
+         /*setting default padding for every element*/
+         padding: 10px;
+
+         /*setting default margin for every element*/
+         margin: 10px;
+        }
+
+        .container{
+            background-color: aquamarine;
+            border: 5px solid rgb(174, 0, 255);
+            border-radius: 35px;
+            padding: 20px; /*same for the four sides*/
+            /*
+            we can also set padding seperately.
+
+            padding-left:25px;
+            padding-right:25px;
+            padding-top:25px;
+            padding-bottom:25px;
+            */
+
+           /* padding: 25px 30px 30px 25px;  padding top bottom left*/
+
+           /*
+
+           margin can also be set like the padding in the css.
+
+            margin: 35px;
+          */
+            margin: 15px 15px 10px 10px;/*top rigth bottom left*/
+
+            width:500px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is Box Model.</h3>
+        <a href="https://github.com/Kailashmandal/HTML-practice.git" target="_block">Go to the Repository</a>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nemo? Modi delectus repellendus consequuntur. Eos labore eaque animi neque! Dolorum in impedit laboriosam, nemo nobis blanditiis aspernatur id tempora rem.</p>
+    </div>
+    <div class="container">
+        <h3>This is Box Model.</h3>
+        <p id="second">Lorem ipsum dolor sit <a href="https://github.com/Kailashmandal/HTML-practice.git" target="_block">Open Repository</a> amet consectetur adipisicing elit. Optio, nemo? Modi delectus repellendus consequuntur. Eos labore eaque animi neque! Dolorum in impedit laboriosam, nemo nobis blanditiis aspernatur id tempora rem.</p>
+    </div>
+    <div class="container">
+        <h3>This is Box Model.</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nemo? Modi delectus repellendus consequuntur. Eos labore eaque animi neque! Dolorum in impedit laboriosam, nemo nobis blanditiis aspernatur id tempora rem.</p>
+    </div>
+</body>
+</html>
